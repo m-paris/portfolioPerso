@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Portfolio Matthieu Paris</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.png" alt="Homepage">
+            </a>
+        </div>
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Navigation</h3>
+                
+                <ul class="header-nav__list">
+                    <a href="index.html">Accueil</a>  
+                </ul>
+
+    
+                <!--<p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href='#0'>voluptatem</a> porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p>-->
+    
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-behance"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                    </li>
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav>  <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h3>TP PostgreSQL</h3>
+
+                <h1>
+                    <br>
+                    Matthieu <br>
+                    PARIS<br>
+               
+                </h1>
+
+               <!-- <div class="home-content__buttons">
+                    <a href="#contact" class="smoothscroll btn btn--stroke">
+                        Voir mes projets
+                    </a>
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        En savoir plus
+                    </a>
+                </div>-->
+
+            </div>
+
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+
+            <div class="home-content__line"></div>
+
+        </div> <!-- end home-content -->
+
+
+        <ul class="home-social">
+            <li>
+                <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-behance" aria-hidden="true"></i><span>Behance</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
+            </li>
+        </ul> 
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+
+<section style="background-color: white;">
+<div class="row " style="background-color: white;">
+<center><h2 style="margin-top: 0 !important;padding-top:15px;"> TP PostgreSQL </h2></center>
+
+        
+<div class="col-md-6">
+      <div class="thumbnail">
+<h4> Installation sur serveur virtuel (Ubuntu) </h4>
+<p><strong> 1. </strong> Installer le paquet postgresql (<i>sudo apt-get install postgresql</i>) <br>
+<strong>2. </strong> Se connecter avec l'utilisateur postgre (<i>sudo -i -u postgre</i>) puis lancer l'invité de commande (<i>psql</i>) <br>
+<strong>3. </strong> Créer un utilisateur (<i>CREATE USER nomUtilisateur;</i>) <br>
+<strong>4. </strong> Donner lui les droits de créer une BDD (<i>ALTER ROLE nomUtilisateur WITH CREATEDB;</i>) <br>
+<strong>5.</strong>  Ajouter un mot de passe pour l'utilisateur (<i>ALTER USER nomUtilisateur WITH ENCRYPTED PASSWORD 'password' ;</i>) <br>
+<strong>6.</strong>  Quitter PostgreSQL puis reconnectez vous avec votre utilisateur (<i>\q </i>pour quitter et relancer avec <i>psql</i>)<br> </p>
+<br>
+<h4> Connexion sur un serveur distant (machine hôte) </h4>
+<p><strong> 1. </strong> Editer le fichier /etc/postgresql/9.5/main/postgresql.conf (<i>sudo nano /etc/postgresql/9.5/main/postgresql.conf</i>)<br> 
+Modifiez la ligne suivante pour autoriser n'importe qu'elle machine à se connecter <strong>listen_addresses = '*'</strong> <br>
+<strong> 2. </strong> Editer le fichier /etc/postgresql/9.5/main/pg_hba.conf (<i>sudo nano /etc/postgresql/9.5/main/pg_hba.conf</i>)<br>
+Ajouter la ligne suivante :<strong> host    all all IP de votre serveur md5 </strong> <br>
+<strong> 3. </strong> Redémarrer le service postgresql ( <i> sudo service postgresql restart </i>) <br>
+<strong> 4. </strong> Sur votre machine hôte, installez le paquet postgresql-client (<i>sudo apt-get install postgresql-client</i>) <br>
+<strong> 5. </strong> Connectez-vous depuis la machine hôte (<i> psql -h "IP de votre serveur" nomUtilisateur password </i>) <br> </p>
+<br>
+<h4> Installer le client web phppgadmin </h4>
+<p><strong> 1. </strong> Editer le fichier /etc/apache2/conf-available/phppgadmin.conf (<i>sudo nano /etc/apache2/conf-available/phppgadmin.conf</i>)<br>
+Ajouter un <strong>#</strong> devant la ligne <strong>Require local</strong> puis ajouter a la ligne suivante <strong>Allow From all</strong><br>
+<strong> 2. </strong> Editer le fichier /etc/phppgadmin/config.inc.php (<i>sudo nano /etc/phppgadmin/config.inc.php</i>)<br>
+Trouver la ligne <strong>$conf['extra_login_security'] = true</strong> et remplacer <strong>true</strong> par <strong>false</strong> <br>
+<strong> 3. </strong> Redémarrer Apache2 et PostgreSQL (<i>systemctl restart postgresql </i> et <i> systemctl restart apache2</i>) <br>
+<strong> 4. </strong> Accéder a phppgadmin avec l'adresse : <strong>http://IP du Serveur/phppgadmin/</strong> 
+
+
+
+</div>
+</div>
+
+<div class="col-md-6">
+      <div class="thumbnail">
+<h4 style="text-align : center;"
+> Les différentes commandes SQL </h4><br>
+<table>
+<thead>
+<tr> <th> Commande SQL </th> 
+<th> A pour fonction </th>
+<th> Exemple </th>
+</tr>
+</thead>
+
+<tbody>
+<tr><td> CREATE USER </td> 
+<td> Créer un utilisateur </td>
+<td> CREATE USER Toto;</td>
+</tr>
+
+<tr><td> ALTER ROLE </td> 
+<td> Donner un rôle à un utilisateur </td>
+<td> ALTER ROLE admin WITH SUPERUSER;</td>
+</tr>
+
+<tr><td> CREATE GROUP </td> 
+<td> Créer un groupe </td>
+<td> CREATE GROUP gradmin;</td>
+</tr>
+
+<tr><td> ADD USER </td> 
+<td> Ajouter un utilisateur dans un groupe </td>
+<td> ALTER GROUP gradmin ADD USER admin;</td>
+</tr>
+
+<tr><td> CREATE TABLE  </td> 
+<td>Créer une table</td>
+<td> CREATE TABLE carte_mere(no_carte integer primary key, marque varchar(25), prix_carte float);</td>
+</tr>
+
+<tr><td> INSERT INTO  </td> 
+<td>Insérer des informations dans une table existante</td>
+<td>INSERT INTO ordinateur VALUES (1,'MSI',100);</td>
+</tr>
+
+<tr><td> GRANT  </td> 
+<td>Donner des droits à un utilisateur ou un groupe</td>
+<td>GRANT select, insert, delete ON TABLE carte_mere TO gradmin;</td>
+</tr>
+
+<tr><td> ADD COLUMN  </td> 
+<td>Ajouter une colonne dans une table existante</td>
+<td>ALTER TABLE ordinateur ADD COLUMN marque_ordi varchar(50);</td>
+</tr>
+
+<tr><td>CREATE VIEW  </td> 
+<td>Créer une vue</td>
+<td>CREATE VIEW test AS SELECT * FROM ordinateur WHERE prix_total=390;</td>
+</tr>
+
+<tr><td>DROP VIEW  </td> 
+<td>Supprimer une vue</td>
+<td>DROP VIEW test;</td>
+</tr>
+
+<tr><td>RENAME  </td> 
+<td>Renommer une table existante</td>
+<td>ALTER TABLE ordinateur RENAME TO ordi;</td>
+</tr>
+
+<tr><td>ADD CHECK  </td> 
+<td>Ajouter une contrainte </td>
+<td>ALTER TABLE ordi ADD CHECK (prix_total>'350');</td>
+</tr>
+
+<tr><td>CREATE SCHEMA  </td> 
+<td>Créer un nouveau schéma </td>
+<td>CREATE SCHEMA  test_schema;</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright Matthieu PARIS 2018</span> 
+                    	
+                </div>
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

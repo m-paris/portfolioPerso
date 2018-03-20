@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Portfolio Matthieu Paris</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.png" alt="Homepage">
+            </a>
+        </div>
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Navigation</h3>
+                
+                <ul class="header-nav__list">
+                     <a href="index.html">Accueil</a>   
+                </ul>
+
+    
+                <!--<p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href='#0'>voluptatem</a> porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p>-->
+    
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-behance"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                    </li>
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav>  <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h3>TP déclencheurs et procédures</h3>
+
+                <h1>
+                    <br>
+                    Matthieu <br>
+                    PARIS<br>
+               
+                </h1>
+
+               <!-- <div class="home-content__buttons">
+                    <a href="#contact" class="smoothscroll btn btn--stroke">
+                        Voir mes projets
+                    </a>
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        En savoir plus
+                    </a>
+                </div>-->
+
+            </div>
+
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+
+            <div class="home-content__line"></div>
+
+        </div> <!-- end home-content -->
+
+
+        <ul class="home-social">
+            <li>
+                <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-behance" aria-hidden="true"></i><span>Behance</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
+            </li>
+        </ul> 
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+
+<section style="background-color: white;">
+<div class="row " style="background-color: white;">
+<center><h2 style="margin-top: 0 !important;padding-top:15px;"> Les procédures et déclencheurs sous PostgreSQL </h2></center>
+
+      <div class="col-md-6">
+      <div class="thumbnail">
+<h4 style="text-align : center; margin-top: 30px;"> Les procédures </h4>
+<br>
+
+<p>Les procédures stockées sont des fonctions stockées dans la base de données qui sont interprétée au niveau du serveur.</p>
+<u>Exemple d'une fonction : </u><br><br>
+<p><b>CREATE OR REPLACE FUNCTION</b> extraire_commande(numClient integer)
+    <b>RETURNS SETOF </b>gestioncommandes.commande AS $$<br>
+    <b>BEGIN</b><br> 
+    <b>RETURN QUERY</b> SELECT * FROM gestioncommandes.commande WHERE num_client = numClient;<br>
+    <b>END;</b>
+$$ LANGUAGE plpgsql;</p><br>
+<p>Cette fonction a pour but de renvoier toutes les commandes d'un client dont le numéro est passé en paramètre.</p>
+<br>
+<table>
+<thead>
+    <tr style="text-align:center;"> <th> Commande </th> 
+<th> A pour fonction </th>
+<th> Exemple </th>
+</tr>
+</thead>
+
+<tbody>
+<tr><td> %ROWTYPE </td> 
+<td> Le type correspondant à la ligne d'une table </td>
+<td> p1 Personne<b>%ROWTYPE</b>;</td>
+</tr>
+
+<tr><td> %TYPE </td> 
+<td> Le type d'une colonne d'une table </td>
+<td> np1 Personne.nom<b>%TYPE</b>;</td>
+</tr>
+
+<tr><td> PERFORM </td> 
+<td> Execute une fonction sans récupérer le résultat </td>
+<td> <b>PERFORM</b> add(1,"Test");</td>
+</tr>
+
+<tr><td> RETURN </td> 
+    <td> Permet de renvoyer les données d'une fonction<br> Le type doit correspondre à celui inidiqué dans le RETURNS </td>
+<td> <b>RETURN</b> qte_reservee;</td>
+</tr>
+
+<tr><td> VOID </td> 
+<td> Le type de retour VOID permet de se passer du RETURN </td>
+<td> CREATE FUNCTION livraison (num_produit int) RETURNS <b>VOID</b> AS $$</td>
+</tr>
+
+<tr><td> RETURN NEXT </td> 
+<td> Permet de renvoier un élément d'une séquence d'enregistrement </td>
+<td> <b>RETURN NEXT</b> qte_reservee;</td>
+</tr>
+
+<tr><td> RETURN QUERY </td> 
+<td> Permet de renvoyer le résultat d'une requète </td>
+<td> <b>RETURN QUERY</b> SELECT * FROM produit;</td>
+</tr>
+
+<tr><td> SELECT INTO </td> 
+<td> Affectation du résultat d'un select(renvoyant un seul enregistrement) dans une variable de type ROWTYPE ou dans une liste de variables </td>
+<td> <b>SELECT INTO</b> produit1 * FROM produit WHERE num_produit=1;</td>
+</tr>
+</tbody>
+</table>
+      </div>
+</div>
+
+<div class="col-md-6">
+      <div class="thumbnail">
+<h4 style="text-align : center; margin-top: 30px;"> Les déclencheurs </h4><br>
+<p>Les déclencheurs sont des programmes stockés dans une base de données. <br>
+Ils sont : <br>
+- Associé à une table de la base de donnée. <br>
+- Associé à un événement qui se produit sur cette table. <br>
+- Exéctuté automatiquement lorsque l'événement auquel il est attaché se produit sur la table.</p>
+<br>
+<p><u>Exemple d'un déclencheur avec une fonction :</u></p>
+<br>
+<p><b>CREATE or REPLACE FUNCTION</b> qte_stock() <b>RETURNS TRIGGER</b> AS $$<br>
+    <b>DECLARE</b><br> 
+    mon_produit gestioncommandes.produit%rowtype;<br>
+    ma_ligne_commande gestioncommandes.ligne_commande%rowtype;<br>
+    modif_possible Boolean;<br>
+    modif_stock INT;<br>
+    modif_qte_reservee INT;<br>
+    modif_prix INT;<br>
+
+    <b>BEGIN</b><br>
+    
+
+    SELECT INTO mon_produit * FROM gestioncommande.produit WHERE num_produit=NEW.num_produit ;<br>
+
+    <b>IF</b> (mon_produit.qte_stock-mon_produit.qte_reservee >=0) <b>THEN</b><br>
+    modif_possible:= TRUE;<br>
+    modif_stock:= mon_produit.qte_stock-mon_produit.qte_reservee;<br>
+
+    
+    <b>NEW</b>.possible:= modif_possible;<br>
+
+    UPDATE gestioncommandes.produit<br>
+    SET qte_stock = modif_stock<br>
+    WHERE num_produit=NEW.num_produit ;<br>
+
+    <b>ELSE</b><br> 
+    modif_possible:= FALSE;<br>
+    modif_qte_reservee:= mon_produit.qte_reservee + ma_ligne_commande.qte;<br>
+    <b>NEW</b>.possible:= modif_possible;<br>
+    
+
+    UPDATE gestioncommandes.produit<br>
+    SET qte_reservee = modif_qte_reservee<br>
+    WHERE num_produit=NEW.num_produit ;<br>
+
+    <b>END IF</b>;<br>
+
+    <b>NEW</b>.prix_unitaire = mon_produit.prix_unitaire * 1.10;<br>
+    <b>RETURN NEW</b>;<br>
+    END;<br>
+    $$ language plpgsql;<br><br>  
+
+    <b>CREATE TRIGGER</b> trigger_qte_stock <b>INSTEAD OF INSERT</b><br>
+    ON gestioncommandes.ligne_commande<br>
+    FOR EACH ROW EXECUTE PROCEDURE qte_stock();<br></p>
+<br>
+<p>Cette fonction a pour but de modifier la quantité réservée, le stock et le prix d'un produit après qu'une ligne de commande est insérée.</p>
+<br>
+<p>Avec un déclencheur, la fonction ne possède plus d'argument et le type de retour devient <i>RETURNS TRIGGER</i><br>
+    En généreal, il renvoie l'un des enregistrements suivants :<br>
+    - <b>NEW</b> qui est une variable enregistrement (Type RECORD) contenant la nouvelle ligne (pour les opérations UPDATE/INSERT)<br>
+    - <b>OLD</b> qui est une variable enregistrement contenant l'ancienne ligne (pour les opérations UPDATE/DELETE)<br>
+</p>
+<p>Il est ainsi possible d'utiliser des structures conditionnelles tel que :<br>
+    - Le bloc IF <br>
+    - Le bloc ELSEIF <br>
+    - Le bloc ELSE <br>
+</p>
+      
+      
+      </div>
+</div>  
+
+</div>
+</section>
+
+<footer>
+<div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright Matthieu PARIS 2018</span> 
+                    	
+                </div>
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
