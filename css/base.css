@@ -791,6 +791,7 @@ textarea {
     .block-tab-1-2 .col-block:nth-child(2n+1) {
         clear: both;
     }
+
 }
 
 
@@ -957,4 +958,8 @@ textarea {
     
  }
 
- 
+@media screen and (max-width: 767px){
+    img{
+        margin-left: 0px !important;
+    }
+}
