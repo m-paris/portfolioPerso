@@ -277,6 +277,71 @@ J'ai donc rencontré différentes situations professionnelles qui sont :<br><br>
             <img src="images/Stage2/autocompleteJs.png"  style="margin-left: 12%; margin-top: 10px;">
         </div>
     </div>
+</div>
+<div class="container">
+    <div class="row">
+    <div class="col-md-12">
+        <h4 style="margin-top:30px; text-decoration: underline green;"> Delicorner :</h4>
+    </div>
+</div>
+<div class="row">
+        <div class="col-md-12">
+            <p>Pour Delicorner, je me suis occupé de leur plateforme durant 1 semaine dans leur locaux afin de préparer une possible alternance pour l'année prochaine. J'ai donc été au contact du client afin de répondre au mieux à ses besoins. Par exemple, le client voulait voir le prix du devis d'un client à lui avant de faire générer le devis en lui même afin de lui faire gagner du temps. J'ai donc réalisé cette tâche directement dans la vue Twig en y ajoutant un js afin de refrsh la page lorsque l'on supprime un sous produit ce qui permet de refresh le prix totalHT.</p>
+        </div> 
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="images/Stage2/prixDeli.png" style="margin-left: 60%;">
+        </div>
+        <div class="col-md-6" >
+            <img src="images/Stage2/prixDeliTwig.png" style="margin-left: 15%; margin-top: 10px;">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" style="margin-top:20px;">
+            <p>Puis par exemple, l'entreprise cherchait à gérer des locations de mobilier et de fournitures auprès de ses clients. Pour se faire, elle voulait que leur commande ne s'affiche pas dans les livraisons. Pour se faire, j'ai donc rajouté une colonne dans la table "command_group" intitulé "Types" afin de définir si la commande est une location ou non. Si la commande est une location, alors cela sera marqué par un 1 dans la BDD. Grâce à cela, je peux faire le trie des livraisons et des lcoations et donc masqué les locations dans le planning de commande. </p>
+        </div> 
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="images/Stage2/entity.png" style="">
+        </div>
+        <div class="col-md-6" >
+            <img src="images/Stage2/form.png" style="margin-top: 20px; margin-left: 25%">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="images/Stage2/editForm.png" style="">
+        </div>
+        <div class="col-md-6" >
+            <img src="images/Stage2/location.png" style="margin-top: 20px; margin-left: 80%">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <img src="images/Stage2/editFormTwig.png" style="margin-left:13%; margin-top: 20px;">
+        </div>
+    </div>
+<div class="row">
+        <div class="col-md-12" style="margin-top:20px; text-align: center;">
+            <p>Maintenant vérifions si cette commande apparaît dans le planning de commande. Elle a pour date le 03/04/2018. </p>
+        </div> 
+    </div>
+     <div class="row">
+        <div class="col-md-6">
+            <img src="images/Stage2/locationForm.png" style=" margin-left: 80%;">
+        </div>
+        <div class="col-md-6" >
+            <img src="images/Stage2/planning.png" id="img" style="margin-top: 20px;margin-left: 5%;">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" style="margin-top:20px; text-align: center;">
+            <p>On observe donc bien que la location ne s'affiche pas.</p>
+        </div> 
+    </div>
+</div>
 </section>
 
 <footer>
@@ -358,6 +423,7 @@ J'ai donc rencontré différentes situations professionnelles qui sont :<br><br>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    
 
 </body>
 
